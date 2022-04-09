@@ -1,12 +1,17 @@
-#pragma once
-#include <string>
+#include "shape.h"
 
-class shape {
-public:
-	shape(std::string name);
-	virtual std::string getName();
-	virtual double area();
-	virtual double perimeter();
-	std::string name;
+shape::shape(std::string name) {
+	this->name = name;
+}
 
-};
+std::string shape::getName() {
+	return this->name;
+}
+
+double shape::area() {
+	return 0;
+}
+
+double shape::perimeter() {
+	return 0;
+}
